@@ -65,6 +65,25 @@
     font-weight: 700;
     margin-bottom: 8px;
   }
+  .close-btn {
+    margin-top: 32px;
+    padding: 14px 32px;
+    border-radius: 999px;
+    background: #f59e0b;
+    color: #000;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+  }
+  .close-btn:active { opacity: 0.85; }
+  .close-hint {
+    margin-top: 14px;
+    font-size: 11px;
+    color: #52525b;
+  }
 </style>
 </head>
 <body>
@@ -84,7 +103,17 @@
   <h1>Sei pronto per InkLab</h1>
   <p>Torna nell'app InkLab sul tuo telefono o tablet e accedi con l'email e la password che hai usato in registrazione.</p>
 
+  <button class="close-btn" id="closeBtn" type="button">Chiudi pagina</button>
+  <p class="close-hint" id="closeHint">Se non si chiude da sola, torna manualmente all'app.</p>
+
   <div class="logo" style="margin-top: 48px;"><span class="ink">ink</span><span class="lab">LAB</span></div>
   <div class="tagline">Professional Tattoo Studio</div>
+
+  <script>
+    document.getElementById('closeBtn').addEventListener('click', function () {
+      window.close();
+      document.getElementById('closeHint').textContent = 'Puoi chiudere questa scheda dal tuo browser.';
+    });
+  </script>
 </body>
 </html>

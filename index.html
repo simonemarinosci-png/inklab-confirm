@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>InkLab — Account confermato</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    background: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
+    color: #fff;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    text-align: center;
+  }
+  .badge {
+    width: 96px;
+    height: 96px;
+    border-radius: 28px;
+    background: radial-gradient(circle at 50% 38%, #1c1c1e 0%, #000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    box-shadow: 0 0 40px rgba(245, 158, 11, 0.15);
+  }
+  .logo {
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  .logo .ink { color: #fff; }
+  .logo .lab { color: #f59e0b; }
+  .tagline {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #71717a;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #a1a1aa;
+    max-width: 320px;
+  }
+  .check {
+    color: #f59e0b;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+  <div class="badge">
+    <svg width="44" height="44" viewBox="0 0 512 512">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FCD34D"/>
+          <stop offset="100%" stop-color="#F59E0B"/>
+        </linearGradient>
+      </defs>
+      <path d="M256,110 C310,110 328,170 322,215 C316,270 292,305 284,340 C277,370 266,395 256,410 C246,395 235,370 228,340 C220,305 196,270 190,215 C184,170 202,110 256,110 Z" fill="url(#g)"/>
+    </svg>
+  </div>
+
+  <div class="check">✓ Account confermato</div>
+  <h1>Sei pronto per InkLab</h1>
+  <p>Torna nell'app InkLab sul tuo telefono o tablet e accedi con l'email e la password che hai usato in registrazione.</p>
+
+  <div class="logo" style="margin-top: 48px;"><span class="ink">ink</span><span class="lab">LAB</span></div>
+  <div class="tagline">Professional Tattoo Studio</div>
+</body>
+</html>
